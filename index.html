@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#8F8778">
+<title>Stouníci · web ve výstavbě / site under construction</title>
+<meta name="description" content="Tady roste svět Stouníků. Web je ve výstavbě. The world of Stouníci is taking shape; this site is under construction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:only light}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family:"Bricolage Grotesque",system-ui,sans-serif;
+  color:#2E2A23;
+  display:grid;place-items:center;
+  overflow:hidden;
+  background:#7C7466;
+}
+svg.pebbles{
+  position:fixed;inset:0;width:100%;height:100%;z-index:0;
+}
+.card{
+  position:relative;z-index:1;
+  max-width:min(560px,90vw);
+  background:rgba(250,247,240,.92);
+  border-radius:18px;
+  padding:44px 46px 38px;
+  box-shadow:0 24px 60px rgba(30,26,20,.35), 0 2px 8px rgba(30,26,20,.18);
+  text-align:center;
+  animation:settle .9s cubic-bezier(.2,.8,.3,1) both;
+}
+@keyframes settle{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.card{animation:none}}
+h1{
+  font-size:clamp(2rem,6vw,2.9rem);font-weight:700;letter-spacing:-.01em;
+  margin-bottom:6px;
+}
+.tagline{
+  font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.16em;
+  text-transform:uppercase;color:#8A6B3F;margin-bottom:26px;
+}
+.msg{font-size:1.08rem;line-height:1.6;font-weight:500}
+.msg + .msg{margin-top:16px;padding-top:16px;border-top:1px solid #E0D8C8;color:#5A5347;font-weight:500}
+.msg .em{color:#8A6B3F}
+.contact{
+  margin-top:28px;font-family:"IBM Plex Mono",monospace;font-size:.8rem;color:#6B6357;
+}
+.contact a{color:#6B6357;text-decoration-color:#B98A4E;text-underline-offset:3px}
+.contact a:hover{color:#8A6B3F}
+</style>
+</head>
+<body>
+
+<svg class="pebbles" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="p1" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#D8D2C4"/><stop offset="100%" stop-color="#ABA290"/>
+    </radialGradient>
+    <radialGradient id="p2" cx="40%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#C7BFAE"/><stop offset="100%" stop-color="#968D7B"/>
+    </radialGradient>
+    <radialGradient id="p3" cx="36%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#BDB4A6"/><stop offset="100%" stop-color="#877E6E"/>
+    </radialGradient>
+    <radialGradient id="p4" cx="42%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#CEC9BE"/><stop offset="100%" stop-color="#9C948A"/>
+    </radialGradient>
+    <radialGradient id="p5" cx="38%" cy="33%" r="75%">
+      <stop offset="0%" stop-color="#B3A791"/><stop offset="100%" stop-color="#82765F"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#57514A"/>
+  <g>
+    <ellipse cx="70"  cy="60"  rx="88" ry="64" fill="url(#p1)" transform="rotate(-12 70 60)"/>
+    <ellipse cx="240" cy="40"  rx="96" ry="70" fill="url(#p3)" transform="rotate(8 240 40)"/>
+    <ellipse cx="430" cy="70"  rx="104" ry="72" fill="url(#p2)" transform="rotate(-5 430 70)"/>
+    <ellipse cx="630" cy="35"  rx="92" ry="66" fill="url(#p4)" transform="rotate(14 630 35)"/>
+    <ellipse cx="820" cy="75"  rx="108" ry="74" fill="url(#p5)" transform="rotate(-9 820 75)"/>
+    <ellipse cx="1020" cy="45" rx="98" ry="70" fill="url(#p1)" transform="rotate(6 1020 45)"/>
+    <ellipse cx="1180" cy="80" rx="90" ry="66" fill="url(#p3)" transform="rotate(-15 1180 80)"/>
+    <ellipse cx="0"   cy="210" rx="94" ry="68" fill="url(#p4)" transform="rotate(10 0 210)"/>
+    <ellipse cx="180" cy="190" rx="102" ry="70" fill="url(#p5)" transform="rotate(-7 180 190)"/>
+    <ellipse cx="380" cy="220" rx="90" ry="64" fill="url(#p1)" transform="rotate(4 380 220)"/>
+    <ellipse cx="560" cy="185" rx="98" ry="72" fill="url(#p3)" transform="rotate(-11 560 185)"/>
+    <ellipse cx="760" cy="215" rx="94" ry="66" fill="url(#p2)" transform="rotate(9 760 215)"/>
+    <ellipse cx="950" cy="190" rx="104" ry="74" fill="url(#p4)" transform="rotate(-4 950 190)"/>
+    <ellipse cx="1140" cy="225" rx="96" ry="68" fill="url(#p5)" transform="rotate(12 1140 225)"/>
+    <ellipse cx="90"  cy="360" rx="100" ry="72" fill="url(#p2)" transform="rotate(-8 90 360)"/>
+    <ellipse cx="290" cy="340" rx="92" ry="66" fill="url(#p4)" transform="rotate(13 290 340)"/>
+    <ellipse cx="480" cy="370" rx="98" ry="70" fill="url(#p5)" transform="rotate(-6 480 370)"/>
+    <ellipse cx="680" cy="345" rx="104" ry="72" fill="url(#p1)" transform="rotate(7 680 345)"/>
+    <ellipse cx="880" cy="375" rx="90" ry="64" fill="url(#p3)" transform="rotate(-13 880 375)"/>
+    <ellipse cx="1070" cy="350" rx="100" ry="70" fill="url(#p2)" transform="rotate(5 1070 350)"/>
+    <ellipse cx="1200" cy="390" rx="88" ry="62" fill="url(#p4)" transform="rotate(-10 1200 390)"/>
+    <ellipse cx="30"  cy="520" rx="96" ry="70" fill="url(#p5)" transform="rotate(11 30 520)"/>
+    <ellipse cx="220" cy="500" rx="104" ry="74" fill="url(#p1)" transform="rotate(-5 220 500)"/>
+    <ellipse cx="420" cy="530" rx="92" ry="66" fill="url(#p3)" transform="rotate(9 420 530)"/>
+    <ellipse cx="610" cy="505" rx="98" ry="70" fill="url(#p2)" transform="rotate(-12 610 505)"/>
+    <ellipse cx="800" cy="535" rx="96" ry="68" fill="url(#p4)" transform="rotate(6 800 535)"/>
+    <ellipse cx="990" cy="510" rx="102" ry="72" fill="url(#p5)" transform="rotate(-8 990 510)"/>
+    <ellipse cx="1170" cy="545" rx="94" ry="66" fill="url(#p1)" transform="rotate(14 1170 545)"/>
+    <ellipse cx="110" cy="680" rx="98" ry="70" fill="url(#p3)" transform="rotate(-9 110 680)"/>
+    <ellipse cx="310" cy="660" rx="90" ry="64" fill="url(#p2)" transform="rotate(12 310 660)"/>
+    <ellipse cx="500" cy="690" rx="104" ry="74" fill="url(#p4)" transform="rotate(-6 500 690)"/>
+    <ellipse cx="700" cy="665" rx="92" ry="66" fill="url(#p5)" transform="rotate(8 700 665)"/>
+    <ellipse cx="890" cy="695" rx="100" ry="70" fill="url(#p1)" transform="rotate(-14 890 695)"/>
+    <ellipse cx="1080" cy="670" rx="96" ry="68" fill="url(#p3)" transform="rotate(4 1080 670)"/>
+    <ellipse cx="600" cy="790" rx="98" ry="68" fill="url(#p2)" transform="rotate(-7 600 790)"/>
+    <ellipse cx="200" cy="800" rx="94" ry="66" fill="url(#p5)" transform="rotate(10 200 800)"/>
+    <ellipse cx="1000" cy="795" rx="92" ry="64" fill="url(#p4)" transform="rotate(-11 1000 795)"/>
+  </g>
+  <!-- Fus Bobo mezi kameny: jediný oblázek s obličejem -->
+  <g transform="rotate(7 950 190)">
+    <ellipse cx="950" cy="190" rx="104" ry="74" fill="url(#p4)"/>
+    <circle cx="922" cy="172" r="6" fill="#2E2A23"/>
+    <circle cx="972" cy="172" r="6" fill="#2E2A23"/>
+    <path d="M 916 208 Q 947 196 978 208" fill="none" stroke="#4A3A28" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 928 224 Q 947 236 966 224" fill="none" stroke="#2E2A23" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
+
+<main class="card">
+  <h1>Stouníci</h1>
+  <div class="tagline">very pebbles · fus bobo</div>
+  <p class="msg">Tady roste svět Stouníků. Web je ve výstavbě.<br><span class="em">Kamínky mají čas, a my s nimi.</span></p>
+  <p class="msg" lang="en">The world of Stouníci is taking shape. This site is under construction.<br><span class="em">Pebbles take their time, and so do we.</span></p>
+  <p class="contact"><a href="mailto:fusbobo@stouniky.com">fusbobo@stouniky.com</a></p>
+</main>
+
+</body>
+</html>
