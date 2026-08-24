@@ -1,2 +1,2 @@
 # stouniky.com
-web stouniky.com temp
+web stouniky.com
